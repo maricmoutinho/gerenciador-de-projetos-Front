@@ -1,63 +1,49 @@
-💻 Gerenciador de Projetos - Frontend
-Este é o frontend da aplicação Gerenciador de Projetos. A interface foi desenvolvida para oferecer uma experiência de usuário fluida e responsiva, funcionando como um PWA (Progressive Web App). Ela permite o gerenciamento completo de projetos (CRUD) através de uma comunicação direta com uma API REST externa.
+````💻 Gerenciador de Projetos - Frontend
+Este é o frontend da aplicação Gerenciador de Projetos, desenvolvido para oferecer uma interface de usuário intuitiva e responsiva. O projeto foi construído como um PWA (Progressive Web App), permitindo a instalação em dispositivos e o funcionamento básico em modo offline. A aplicação se comunica diretamente com uma API REST para realizar o gerenciamento persistente de dados.
 
 🚀 Tecnologias Utilizadas
-HTML5 & CSS3: Estrutura e estilização moderna com foco em responsividade (Mobile First).
+HTML5 & CSS3: Estrutura e estilização com foco em responsividade para dispositivos móveis.
 
-JavaScript (Vanilla): Lógica de consumo de API, manipulação do DOM e estados da aplicação.
+JavaScript (Vanilla): Lógica para consumo de API, manipulação do DOM e gerenciamento de estados.
 
-Service Workers: Implementação de estratégias de cache para suporte offline.
+Service Workers: Implementação de cache para carregamento de recursos e suporte offline.
 
-Web Manifest: Configuração de instalação do app em dispositivos móveis e desktop.
+Web Manifest: Configurações de identidade visual para transformar o site em um aplicativo instalável.
 
 📦 Funcionalidades
-✔ Cadastro de Projetos: Formulário intuitivo para registrar nome, tecnologias, links e descrições.
+✔ Cadastro de Projetos: Formulário para registrar título, tecnologias, links e descrições.
 
-✔ Listagem Dinâmica: Visualização em tempo real dos projetos consumidos da API.
+✔ Listagem Dinâmica: Exibição em tempo real dos projetos cadastrados via API.
 
-✔ Edição Facilitada: Carregamento automático de dados no formulário para atualizações rápidas.
+✔ Edição de Projetos: Função para carregar dados existentes de volta ao formulário para atualização.
 
-✔ Exclusão de Registros: Remoção de projetos com atualização instantânea da interface.
+✔ Remoção de Projetos: Exclusão definitiva de registros através da interface.
 
-✔ Suporte Offline: Graças ao Service Worker, a interface e recursos básicos permanecem acessíveis mesmo sem conexão.
+✔ Experiência Offline: Avisos ao usuário e carregamento de arquivos essenciais via cache quando não houver conexão.
 
-✔ Instalabilidade (PWA): Pode ser instalado no celular ou computador, comportando-se como um aplicativo nativo.
+✔ Instalabilidade: Manifesto configurado para permitir que o usuário adicione o app à sua tela inicial.
 
 🧠 Estrutura do Projeto
-O frontend está organizado de forma simples e eficiente:
+A organização dos arquivos segue uma estrutura limpa para o desenvolvimento web:
 
 Plaintext
 frontend/
 ├── icons/
-│   ├── ic_launcher.png    # Ícone padrão do aplicativo (192x192)
+│   ├── ic_launcher.png    # Ícone do aplicativo (192x192)
 │   └── playstore.png      # Ícone de alta resolução (512x512)
-├── app.js                 # Lógica de integração com a API e Service Worker
-├── index.html             # Estrutura principal da aplicação
-├── manifest.json          # Metadados para instalação do PWA
-├── service-worker.js      # Gerenciamento de cache e modo offline
-└── style.css              # Estilização e media queries para mobile
+├── app.js                 # Lógica do CRUD, consumo de API e registro do Service Worker
+├── index.html             # Estrutura principal da página
+├── manifest.json          # Metadados do PWA (nome, cores e ícones)
+├── service-worker.js      # Estratégias de cache e ciclo de vida do PWA
+└── style.css              # Estilização visual e regras de responsividade
 ⚙️ Integração com a API
-A aplicação consome os dados do endpoint:
-https://gerenciador-de-projetos-59so.onrender.com/api/projects
+A interface consome dados de um backend hospedado externamente:
 
-As requisições utilizam o padrão Fetch API com suporte a:
+URL Base: https://gerenciador-de-projetos-59so.onrender.com/api/projects
 
-GET: Para listar projetos.
-
-POST: Para criar novos registros.
-
-PUT: Para editar projetos existentes.
-
-DELETE: Para remover registros via ID.
-
-🔧 Como Rodar o Projeto
-Clone este repositório.
-
-Abra o arquivo index.html diretamente no seu navegador ou utilize uma extensão como a Live Server (recomendado para testar o Service Worker).
-
-Certifique-se de que o backend está online para que as funcionalidades de salvar/deletar funcionem corretamente.
+As operações são realizadas através da Fetch API, utilizando os métodos GET, POST, PUT e DELETE para sincronizar as ações do usuário com o banco de dados.
 
 👨‍💻 Autor
 Maria Clara Moutinho
 
-Projeto desenvolvido para fins de gerenciamento e organização de portfólio acadêmico/profissional.
+```Projeto desenvolvido para fins de gerenciamento e organização de portfólio acadêmico e profissional.

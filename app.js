@@ -1,4 +1,4 @@
-const API = "https://gerenciador-de-projetos-59so.onrender.com";
+const API = "https://gerenciador-de-projetos-59so.onrender.com/api/projects";
  
 let editingId = null;
  

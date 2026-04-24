@@ -1,4 +1,4 @@
-````💻 Gerenciador de Projetos - Frontend
+💻 Gerenciador de Projetos - Frontend
 Este é o frontend da aplicação Gerenciador de Projetos, desenvolvido para oferecer uma interface de usuário intuitiva e responsiva. O projeto foi construído como um PWA (Progressive Web App), permitindo a instalação em dispositivos e o funcionamento básico em modo offline. A aplicação se comunica diretamente com uma API REST para realizar o gerenciamento persistente de dados.
 
 🚀 Tecnologias Utilizadas

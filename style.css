@@ -1,0 +1,127 @@
+* {
+ box-sizing: border-box;
+}
+
+body {
+ font-family: Arial, sans-serif;
+ background: #f4f6f8;
+ margin: 0;
+ padding: 0;
+}
+
+.container {
+ max-width: 600px;
+ margin: auto;
+ padding: 20px;
+}
+
+h1 {
+ text-align: center;
+ color: #333;
+ margin-bottom: 20px;
+}
+
+/* FORM */
+form {
+ background: white;
+ padding: 20px;
+ border-radius: 12px;
+ box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+label {
+ display: block;
+ margin-top: 10px;
+ font-weight: bold;
+ font-size: 14px;
+}
+
+input, textarea {
+ width: 100%;
+ padding: 10px;
+ margin-top: 5px;
+ border: 1px solid #ccc;
+ border-radius: 8px;
+ font-size: 14px;
+}
+
+button {
+ width: 100%;
+ margin-top: 15px;
+ padding: 12px;
+ background: #4CAF50;
+ color: white;
+ border: none;
+ border-radius: 8px;
+ font-size: 16px;
+ cursor: pointer;
+}
+
+button:hover {
+ background: #437646;
+}
+
+/* LISTA */
+ul {
+ list-style: none;
+ padding: 0;
+ margin-top: 20px;
+}
+
+li {
+ background: white;
+ padding: 15px;
+ margin-bottom: 12px;
+ border-radius: 10px;
+ box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ gap: 10px;
+}
+
+/* TEXTO */
+li div:first-child {
+ flex: 1;
+}
+
+/* BOTÕES */
+.actions {
+ display: flex;
+ flex-direction: column;
+ gap: 5px;
+}
+
+.edit-btn {
+ background: #036cc2;
+}
+
+.delete-btn {
+ background: #f44336;
+}
+
+.edit-btn:hover {
+ background: #024b94;
+}
+
+.delete-btn:hover {
+ background: #a70707;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 500px) {
+ li {
+  flex-direction: column;
+  align-items: flex-start;
+ }
+
+ .actions {
+  width: 100%;
+  flex-direction: row;
+ }
+
+ .actions button {
+  flex: 1;
+ }
+}

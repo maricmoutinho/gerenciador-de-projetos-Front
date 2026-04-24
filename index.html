@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gerenciador de Projetos</title>
+ 
+<link rel="stylesheet" href="./style.css">
+<link rel="manifest" href="./manifest.json">
+</head>
+<body>
+ 
+<main class="container">
+ 
+<h1>Cadastre o seu projeto</h1>
+ 
+<!-- ADICIONADO -->
+<div id="formContainer">
+<form onsubmit="event.preventDefault(); addProject();">
+ 
+<label for="title">Nome do projeto</label>
+<input id="title" placeholder="Ex: Sistema de tarefas" required>
+ 
+<label for="technologies">Tecnologias</label>
+<input id="technologies" placeholder="Ex: Node.js, MongoDB">
+ 
+<label for="link">Link</label>
+<input id="link" placeholder="https://...">
+ 
+<label for="description">Descrição</label>
+<input id="description" placeholder="Descreva o projeto">
+ 
+<button type="submit">Salvar</button>
+ 
+</form>
+</div>
+<!-- FIM -->
+ 
+<ul id="list"></ul>
+ 
+</main>
+ 
+<script src="./app.js"></script>
+</body>
+</html>
